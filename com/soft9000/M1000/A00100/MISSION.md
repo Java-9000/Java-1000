@@ -1,10 +1,11 @@
 # Java-1000: Core Java - For Beginners!
 
+> _VIDEO:_ (tbd)
+
 ## Mission: Your Main 'Params
 * Learn how to read command-line parameters.
 * Discover two ways to iterate through an Array.
 * Review how to index an array using a subscript.
-* _VIDEO:_ (tbd)
 
 ## Bonus:
 * Test your own parameters by updating `MainParamsTest.java`

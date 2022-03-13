@@ -1,10 +1,11 @@
 # Java-1000: Core Java - For Beginners!
 
+> _VIDEO:_ (tbd)
+
 ## Mission: Hello!
 * Show a string on your computer's screen.
 * Use comments in your code.
 * Use `javadoc` in your code.
-* _VIDEO:_ (tbd)
 
 ## Bonus:
 * Validate your output by updating `HelloTest.java`
