@@ -1,7 +1,7 @@
 # Java-1000
-##Core Java - For Beginners!
+## Core Java - For Beginners!
 
-###We suggest that you: 
+### We suggest that you: 
 
 (1) `Fork` this training.
 
