@@ -6,14 +6,14 @@ public class MainParam {
         if (args == null) {
             System.out.println("Input parameters are null.");
             return;
-        }
+        } // end if
         if (args.length == 0) {
             System.out.println("I've nada to heco?");
             return;
-        }
+        } // end if
         if (args.length != 0) {
             System.out.println("I've " + args.length + " parameter strings.");
-        }
+        } // end if
         // The return is implied, here!
-    }
-}
+    } // end main
+} // end class

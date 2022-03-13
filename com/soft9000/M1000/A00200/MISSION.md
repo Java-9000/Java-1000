@@ -1,16 +1,16 @@
 # Java-1000: Core Java - For Beginners!
 
-## Mission: Your Main 'Params
-* Learn how to read command-line parameters.
-* Discover two ways to iterate through an Array.
-* Review how to index an array using a subscript.
+## Mission: Main 'Param Meta
+* Detect command-line parameters.
+* Discover how to test for 'null parameters.'
+* Understand implicit `void` return types.
 
 ## Bonus:
-* Test your own parameters by updating `MainParamsTest.java`
+* Test your own parameters by updating `MainParamTest.java`
 
 ### Files:
-* `MainParams.java`
-* `MainParamsTest.java`
+* `MainParam.java`
+* `MainParamTest.java`
 * `Challenge.java`
 * `ChallengeTest.java`
 
