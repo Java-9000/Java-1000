@@ -1,6 +1,6 @@
 # Java-1000: Core Java - For Beginners!
 
-## Mission: Hello!
+## Mission: Your Main 'Params
 * Learn how to read command-line parameters.
 * Discover two ways to iterate through an Array.
 * Review how to index an array using a subscript.
@@ -13,7 +13,7 @@
 * `MainParamsTest.java`
 
 ### Notes:
-- New 'Javaeers might like to track blocks by adding line comments.
+- New 'Javaeers might like to track block endings by adding line comments.
 - There are two (2) `for` loops here. One in each `.java` file.
 
 ### p.s.
