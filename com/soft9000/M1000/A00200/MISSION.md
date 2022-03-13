@@ -16,7 +16,7 @@
 
 ### Notes:
 - New 'Javaeers might like to track block endings by adding line comments.
-- There are two (2) `for` loops here. One in each `.java` file.
+- Parameter testing is an important way to know what our input is, as well as to prevent data processing errors!
 
 ### p.s.
 * You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
