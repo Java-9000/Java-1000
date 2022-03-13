@@ -4,9 +4,14 @@
 * Show a string on your computer's screen.
 * Use comments in your code.
 * Use `javadoc` in your code.
+* _VIDEO:_ (tbd)
 
 ## Bonus:
 * Validate your output by updating `HelloTest.java`
+
+## Challenge Activity:
+- Provide your own implementation in `Challenge.java`
+- Provide your own test case by updating `ChallengeTest.java`
 
 ### Files:
 * `Hello.java`

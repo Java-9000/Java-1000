@@ -4,9 +4,14 @@
 * Detect command-line parameters.
 * Discover how to test for 'null parameters.'
 * Understand implicit `void` return types.
+* _VIDEO:_ (tbd)
 
 ## Bonus:
 * Test your own parameters by updating `MainParamTest.java`
+
+## Challenge Activity:
+- Provide your own implementation in `Challenge.java`
+- Provide your own test case by updating `ChallengeTest.java`
 
 ### Files:
 * `MainParam.java`
