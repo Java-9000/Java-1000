@@ -13,7 +13,7 @@ public class ChallengeTest {
         ByteArrayOutputStream my_out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(my_out));
         String[] params = {"This", "IS A", "TeSt!"};
-        Challenge.main(params);
+        // Challenge.main(params);
         String[] results = my_out.toString().split("\n");
         String[] expected = {
                 "Got: This ...!",

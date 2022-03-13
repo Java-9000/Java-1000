@@ -12,7 +12,7 @@ public class ChallengeTest {
     public void main() {
         ByteArrayOutputStream my_out = new ByteArrayOutputStream();
         System.setOut(new PrintStream(my_out));
-        Challenge.main(null);
+        // Challenge.main(null);
         Assert.assertEquals("Hello, 'Javaeer!", my_out.toString().trim());
         System.setOut(System.err);
         System.out.println("Testing Success!");
