@@ -6,7 +6,7 @@
 - Follow the instructions
 - Run the test file(s)
 
-(2) Complete the `Challenge.java` activity!
+(2) Create __your own__ challenger & test cases!
 
 ### Support our efforts:
 Please note that you can help me help you by [buying our training](https://www.udemy.com/course/how-to-java).
