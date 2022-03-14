@@ -6,9 +6,12 @@
 (1) Create a private, static function.
 * Function to combine string parameters together.
 * Inputs: String[], StringBuilder
+* Process: Add spaces between strings.
+* Process: Add a newline at the end of the string.
 * Output: void
 
 (2) Create a `main`
+* Check for valid parameters.
 * Pass command-line parameters to the private function, above.
 * Dsplay the results.
 
@@ -26,6 +29,7 @@
 
 ### Notes:
 - Traditionally the Java Runtime provides an empty `String[]` - never a `null` - to a console `main.` Test cases however, can so do!
+- Some feel that `private` member functions need never sanity-checked their parameters. Others do not. (There are valid arguments on both sides!)
 - Parameter testing is an important way to know what our input is, as well as to prevent data processing errors!
 
 ### p.s.
