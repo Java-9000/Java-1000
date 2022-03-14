@@ -3,13 +3,12 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Integral Arrays & Values
-* Create a private, static function.
+(1) Create a private, static function.
 * Function to combine integrals together into an addive 'expression string.' (*)
 * Inputs: `int ...`, StringBuffer
 * Output: void
 
-
-* Create a public, static function.
+(2) Create a public, static function.
 * Function to re-use the above.
 * Inputs: int[]
 * Output: String
