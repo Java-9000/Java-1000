@@ -2,7 +2,7 @@
 ## Core Java - For Beginners!
 
 ### Java 1000 Missions
-The activities, test cases, and challenger exercisess in this project are designed for new software developers. 
+The activities, test cases, and challenger exercises in this project are designed for new software developers. 
 
 These activites are also a designed to help Java enthusiasist ("Javaeers") review the concepts presented in our Java training on Udemy, as well as in other 'core java' educational opportunties.
 
