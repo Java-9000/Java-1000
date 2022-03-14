@@ -3,10 +3,16 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Static Member Functions
-* Create a private, static function.
+(1) Create a private, static function.
 * Function to combine string parameters together.
 * Inputs: String[], StringBuilder
 * Output: void
+
+(2) Create a `main`
+* Pass command-line parameters to the private function, above.
+* Dsplay the results.
+
+(3) Test using JUnit.
 
 ## Bonus:
 * Validate your own requirements by updating our test case.
@@ -19,7 +25,7 @@
 * `StringMakerTest.java`
 
 ### Notes:
-- New 'Javaeers might like to track block endings by adding line comments.
+- Traditionally the Java Runtime provides an empty `String[]` - never a `null` - to a console `main.` Test cases however, can so do!
 - Parameter testing is an important way to know what our input is, as well as to prevent data processing errors!
 
 ### p.s.
