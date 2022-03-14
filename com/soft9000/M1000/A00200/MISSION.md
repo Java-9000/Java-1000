@@ -3,9 +3,12 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Main 'Param Meta
+(1) Create a public, static `main` function to:
 * Detect command-line parameters.
-* Discover how to test for 'null parameters.'
-* Understand implicit `void` return types.
+* Test for a 'null parameter.'
+* Use explicit, as well as implicit `void` return conventions.
+
+(2) Test the above using JUnit.
 
 ## Bonus:
 * Test your own parameters by updating `MainParamTest.java`
