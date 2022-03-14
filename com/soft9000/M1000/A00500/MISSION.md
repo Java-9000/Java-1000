@@ -5,12 +5,12 @@
 ## Mission: Integral Arrays & Values
 (1) Create a private, static function.
 * Function to combine integrals together into an addive 'expression string.' (*)
-* Inputs: `int ...`, StringBuffer
+* Inputs: `int []`, StringBuffer
 * Output: void
 
 (2) Create a public, static function.
 * Function to re-use the above.
-* Inputs: int[]
+  * Inputs: `int ...`
 * Output: String
 
 ## Bonus:
