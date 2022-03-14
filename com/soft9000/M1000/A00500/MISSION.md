@@ -5,7 +5,7 @@
 ## Mission: Integral Arrays & Values
 * Create a private, static function.
 * Function to combine integrals together into an addive 'expression string.' (*)
-* Inputs: int[], StringBuffer
+* Inputs: `int ...`, StringBuffer
 * Output: void
 
 
@@ -29,6 +29,7 @@
 
 ### Notes:
 - (*) Test case demonstrates what an 'expression string' return value should look like.
+- Accepting a variable number of parameters (`int ...`) is easier to use than `int []`!
 - Parameter testing is an important way to know what our input is, as well as to prevent data processing errors!
 
 ### p.s.
