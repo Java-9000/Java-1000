@@ -3,10 +3,14 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Static Member Functions
-* Create a private, static function.
+(1) Create a private, static function.
 * Function to combine string parameters together.
 * Input: String[]
 * Output: String
+
+(2) Call the above from within your static `main` function.
+
+(3) Test that `main` using JUnit.
 
 ## Bonus:
 * Validate your own requirements by updating our test case.
