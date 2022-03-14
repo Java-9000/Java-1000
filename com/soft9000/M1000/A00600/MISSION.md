@@ -30,6 +30,8 @@
 * `NullNasty.java`
 
 ### Notes:
+- "Boxing" is the process of surrounding a primitive type with an instance of a class. 
+- The process of "unboxing" is the opposite.
 - Whilst an instance of a class may be set to `null`, primitive types need never be.
 
 ### p.s.
