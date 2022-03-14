@@ -9,7 +9,7 @@
 * Output: String
 
 ## Bonus:
-* Test your own parameters by updating `MainParamTest.java`
+* Validate your own requirements by updating our test case.
 
 ## Challenge Activity:
 - Provide your own implementation & test case.
