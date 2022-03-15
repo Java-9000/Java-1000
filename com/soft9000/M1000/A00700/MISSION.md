@@ -5,7 +5,7 @@
 ## Mission: Decimal Precisions
 The Internet has much to say about floating point 
 accuracies. The net effect (no pun intended) of which 
-easily justifies Java's creation the `BigDecimal` class. 
+easily justifies Java's creation of the `BigDecimal` class. 
 
 Worthy of several activities in its own right, the mission 
 here is merely to demonstrate the basics.
