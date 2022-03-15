@@ -14,6 +14,7 @@ here is merely to demonstrate the basics.
 * Inputs: `BigDecimal result` and `Double ... vals` for each.
 * Processing: Ignore any `null` input for `vals`.
 * Processing: Ignore `null` instance values.
+* Processing: Perform the function-named operation.
 * Output: A final `BidDecimal` result.
 
 (2) Review the test case to examine BigDecimal's primitive type support.
@@ -32,10 +33,10 @@ here is merely to demonstrate the basics.
 * `BigDTest.java`
 
 ### Notes:
-- Notice that "boxing" is automatically performed for the input-parameters.
+- Notice that "boxing" is automatically performed on the input-parameters.
 - Notice the use of the `D` suffix. Others are available! (e.g. `L`, `F`)
 - Notice that `assertEquals` newfangled `delta` option supports result-tolerances.
-- Did you see the Factory Pattern?
+- Did you notice the Factory Pattern?
 
 ### p.s.
 * You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
