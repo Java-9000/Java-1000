@@ -1,5 +1,6 @@
 # Java-1000
 ## Core Java - For Beginners!
+You can [click here](../../../../MISSIONS.md) to see the mission index.
 
 ### We suggest that you: 
 (1) Read `MISSION.md`

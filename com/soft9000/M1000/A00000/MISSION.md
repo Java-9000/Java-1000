@@ -29,3 +29,5 @@ New 'Javaeers:
 * You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
 * You can also join our [Javaeers Group](https://www.facebook.com/JavaVideos9000/)!
 * If you are looking for advanced lessons, consider joining the [Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490) Group.
+
+You can [click here](../../../../MISSIONS.md) to see the mission index.

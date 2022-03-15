@@ -31,3 +31,4 @@
 * You can also join our [Javaeers Group](https://www.facebook.com/JavaVideos9000/)!
 * If you are looking for advanced lessons, consider joining the [Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490) Group.
 
+You can [click here](../../../../MISSIONS.md) to see the mission index.

@@ -1,5 +1,6 @@
 # Java-1000
 ## Core Java - For Beginners!
+You can [click here](../../../MISSIONS.md) to see the mission index.
 
 ### Java 1000 Missions
 The activities, test cases, and challenger exercises in this project are designed for new software developers. 
