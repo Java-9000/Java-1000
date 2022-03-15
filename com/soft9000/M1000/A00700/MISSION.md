@@ -35,6 +35,7 @@ here is merely to demonstrate the basics.
 - Notice that "boxing" is automatically performed for the input-parameters.
 - Notice the use of the `D` suffix. Others are available! (e.g. `L`, `F`)
 - Notice that `assertEquals` newfangled `delta` option supports result-tolerances.
+- Did you see the Factory Pattern?
 
 ### p.s.
 * You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
