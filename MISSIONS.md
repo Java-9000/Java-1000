@@ -39,7 +39,7 @@ Learn what Python scripts [can do](https://www.udemy.com/course/python-1000/?ref
 
 > Go to [Mission](./com/soft9000/M1000/A00300/MISSION.md)
 
-## Mission: Static Member Functions
+## Mission: StringBuilder
 (1) Create a private, static function.
 * Function to combine string parameters together.
 * Inputs: String[], StringBuilder
@@ -56,7 +56,7 @@ Learn what Python scripts [can do](https://www.udemy.com/course/python-1000/?ref
 
 > Go to [Mission](./com/soft9000/M1000/A00400/MISSION.md)
 
-## Mission: Integral Arrays & Values
+## Mission: StringBuffer & Integral Arrays
 (1) Create a private, static function.
 * Function to combine integrals together into an addive 'expression string.' (*)
 * Inputs: `int []`, StringBuffer
