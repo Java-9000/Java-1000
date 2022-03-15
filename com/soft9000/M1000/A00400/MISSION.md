@@ -5,7 +5,7 @@
 ## Mission: StringBuilder
 (1) Create a private, static function.
 * Function to combine string parameters together.
-* Inputs: String[], StringBuilder
+* Inputs: `String[]`, `StringBuilder`
 * Process: Add spaces between strings.
 * Process: Add a newline at the end of the string.
 * Output: void
