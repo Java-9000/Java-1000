@@ -2,7 +2,7 @@
 
 > _VIDEO:_ (tbd)
 
-## Mission: Integral Arrays & Values
+## Mission: StringBuffer & Integral Arrays
 (1) Create a private, static function.
 * Function to combine integrals together into an addive 'expression string.' (*)
 * Inputs: `int []`, StringBuffer
