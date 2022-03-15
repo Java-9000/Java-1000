@@ -8,7 +8,8 @@ import static org.junit.Assert.assertEquals;
 
 public class BigDTest {
 
-    private final BigDecimal bd = new BigDecimal(1D);
+    // Factory Pattern:
+    private final BigDecimal bd = BigDecimal.valueOf(1D);
 
     @Test
     public void add() {
@@ -16,6 +17,7 @@ public class BigDTest {
         assertEquals(17.5D, result.doubleValue(), 0.0);
         assertEquals(17.5F, result.floatValue(), 0.0);
         assertEquals(17, result.intValue(), 0.0);
+        assertEquals(.5F, result.remainder(result).floatValue(), 0.6); // Note
     }
 
     @Test
@@ -24,6 +26,8 @@ public class BigDTest {
         assertEquals(-15.5D, result.doubleValue(), 0.0);
         assertEquals(-15.5F, result.floatValue(), 0.0);
         assertEquals(-15, result.intValue(), 0.0);
+        assertEquals(-.5F, result.remainder(result).floatValue(), 0.5); // Note
+        assertEquals(0F, result.remainder(result).floatValue(), 0.4); // Notice!
     }
 
     @Test
