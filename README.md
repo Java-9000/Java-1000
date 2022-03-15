@@ -1,6 +1,16 @@
 # Java-1000
 ## Core Java - For Beginners!
 
+If another recuriter asks us "what our favorite
+programming language is" wee geeks might finally be 
+driven to seppuku... Much like a bag of golf clubs, most simply know when to use each? 
+
+Thus I use a little Python to help me maintain the 'meta for this Java 
+project. -Scripting languages are great for that type of thing. 8^)
+
+So **feel free to [click here](./MISSIONS.md) to see that 'genned mission
+index**, or run [the script](./missions.py) on your 'local if that page is slightly out-of-date...
+
 ### We suggest that you: 
 
 (1) `Fork` this training.
