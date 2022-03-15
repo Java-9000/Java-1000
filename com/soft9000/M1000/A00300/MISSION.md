@@ -5,8 +5,8 @@
 ## Mission: Static Member Functions
 (1) Create a private, static function.
 * Function to combine string parameters together.
-* Input: String[]
-* Output: String
+* Input: `String[]`
+* Output: `String`
 
 (2) Call the above from within your static `main` function.
 
