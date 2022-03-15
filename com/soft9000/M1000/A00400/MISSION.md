@@ -2,7 +2,7 @@
 
 > _VIDEO:_ (tbd)
 
-## Mission: Static Member Functions
+## Mission: StringBuilder
 (1) Create a private, static function.
 * Function to combine string parameters together.
 * Inputs: String[], StringBuilder
