@@ -143,3 +143,15 @@ require a `CTRL+d` / `CTRL+z` (aka "EOF") to stop the scanning process!
 
 > Go to [Mission](./com/soft9000/M1000/A00800/MISSION.md)
 
+## Mission: RPN Calculator
+Now is a good time to
+demonstrate how to use what we have learned to create
+a 'Reverse Polish Notation' - or R.P.N - calculator.
+
+Your mission is to create a "White Box" test:
+  * Run CaclRPN.Java
+  * Review the code
+  * Create test cases
+
+> Go to [Mission](./com/soft9000/M1000/A00900/MISSION.md)
+
