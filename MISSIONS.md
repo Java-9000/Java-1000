@@ -151,7 +151,10 @@ a 'Reverse Polish Notation' - or R.P.N - calculator.
 Your mission is to create a "White Box" test:
   * Run CaclRPN.Java
   * Review the code
-  * Create test cases
+  * Create test cases 
+
+__NOTE__: If the term "White Box Testing" is new to you, then you 
+might also enjoy [Testing Success](https://www.udemy.com/course/testing-success/?referralCode=23D2EC0CEB0FFB5C65C8)?
 
 > Go to [Mission](./com/soft9000/M1000/A00900/MISSION.md)
 
