@@ -15,7 +15,7 @@ Your mission is to create a "White Box" test:
 ## Bonus:
 * Review each `NEW!` comment.
 * Note how we used 
-`[ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)` 
+[`ArrayList`](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html) 
 to manage the evaluation stack.
 
 ## Challenge Activity:
