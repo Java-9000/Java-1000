@@ -31,42 +31,75 @@ public class TryParsers {
     }
 
     public static BigDecimal add(ArrayList<String> stack, BigDecimal btotal) {
-        for(String line : stack) {
+        for (String line : stack) {
             BigDecimal effort = tryBigD(line);
-            if(effort != null) {
-                btotal = btotal.add(effort);
+            if (effort != null) {
+                if (btotal == null) {
+                    btotal = effort;
+                    continue;
+                }
+                try {
+                    btotal = btotal.add(effort);
+                } catch (Exception ex) {
+                    return BigDecimal.valueOf(0); // NEW! (error)
+                }
             }
         }
         return btotal;
     }
 
     public static BigDecimal subtract(ArrayList<String> stack, BigDecimal btotal) {
-        for(String line : stack) {
+        for (String line : stack) {
             BigDecimal effort = tryBigD(line);
-            if(effort != null) {
-                btotal = btotal.subtract(effort);
+            if (effort != null) {
+                if (btotal == null) {
+                    btotal = effort;
+                    continue;
+                }
+                try {
+                    btotal = btotal.subtract(effort);
+                } catch (Exception ex) {
+                    return BigDecimal.valueOf(0); // NEW! (error)
+                }
             }
         }
         return btotal;
     }
 
     public static BigDecimal multiply(ArrayList<String> stack, BigDecimal btotal) {
-        for(String line : stack) {
+        for (String line : stack) {
             BigDecimal effort = tryBigD(line);
-            if(effort != null) {
-                btotal = btotal.multiply(effort);
+            if (effort != null) {
+                if (btotal == null) {
+                    btotal = effort;
+                    continue;
+                }
+                try {
+                    btotal = btotal.multiply(effort);
+                } catch (Exception ex) {
+                    return BigDecimal.valueOf(0); // NEW! (error)
+                }
             }
         }
         return btotal;
     }
 
     public static BigDecimal divide(ArrayList<String> stack, BigDecimal btotal) {
-        for(String line : stack) {
-            BigDecimal effort = tryBigD(line);
-            if(effort != null) {
-                btotal = btotal.divide(effort);
+
+            for (String line : stack) {
+                BigDecimal effort = tryBigD(line);
+                if (effort != null) {
+                    if (btotal == null) {
+                        btotal = effort;
+                        continue;
+                    }
+                    try {
+                        btotal = btotal.divide(effort);
+                    } catch(Exception ex) {
+                        return BigDecimal.valueOf(0); // NEW! (error)
+                    }
+                }
             }
-        }
         return btotal;
     }
 }

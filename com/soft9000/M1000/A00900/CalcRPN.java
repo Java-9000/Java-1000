@@ -15,10 +15,12 @@ public class CalcRPN {
 
     public static BigDecimal Parse(String line) {
         ArrayList<String> stack = new ArrayList<>(); // NEW!
-        BigDecimal btotal = BigDecimal.valueOf(0D);
+        BigDecimal btotal = null; // NEW! Tell others that we're 1st timein' ...
 
         String[] values = line.split(" ");
         for (String value : values) {
+            if(value == null || value.length() == 0)
+                continue;
             char cval = value.charAt(0);
             switch (cval) {
                 case '+': {
