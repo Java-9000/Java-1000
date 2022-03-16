@@ -39,9 +39,9 @@ require a `CTRL+d` / `CTRL+z` (aka "EOF") to stop the scanning process!
 * Update the test case to perform additional tests. 
 * Ideas include
 parsing multiple file-lines testing different:
-  * types
-  * input-files
-  * Scanner creations
+  * numeric sequences
+  * input test files
+  * `Scanner` creations
   * as well many more numeric values.
 
 ## Challenge Activity:
