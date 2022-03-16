@@ -12,6 +12,9 @@ Your mission is to create a "White Box" test:
   * Review the code
   * Create test cases 
 
+__NOTE__: If the term "White Box Testing" is new to you, then you 
+might also enjoy [Testing Success](https://www.udemy.com/course/testing-success/?referralCode=23D2EC0CEB0FFB5C65C8)?
+
 ## Bonus:
 * Review each `NEW!` comment.
 * Note how we used 
