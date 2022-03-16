@@ -1,6 +1,7 @@
 package com.soft9000.M1000.A00800;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 public class WordProblem {
@@ -24,6 +25,15 @@ public class WordProblem {
     public static Double tryDouble(String value) {
         try {
             return Double.parseDouble(value);
+        } catch (NumberFormatException e) {
+            return null;
+        }
+    }
+
+    public static BigDecimal tryBigD(String value) {
+        try {
+            float effort = Float.parseFloat(value);
+            return BigDecimal.valueOf(effort);
         } catch (NumberFormatException e) {
             return null;
         }
@@ -61,7 +71,37 @@ public class WordProblem {
         if (dtotal != 0D) {
             sb.append(" dtotal = " + dtotal);
         }
-        sb.append(" SIGMA = " + BigDecimal.valueOf(itotal + ftotal + dtotal));
+        sb.append(" SIGMA = " + itotal + ftotal + dtotal);
+        return sb.toString().trim();
+    }
+
+    public static String addBigNums(Scanner scn, int precision) {
+        StringBuilder sb = new StringBuilder();
+        int itotal = 0;
+        BigDecimal btotal = BigDecimal.valueOf(0D);
+        while (scn.hasNext()) {
+            String value = scn.next();
+            Integer ivalue = tryInt(value);
+            if (ivalue != null) {
+                itotal += ivalue;
+                continue;
+            }
+
+            Double dvalue = tryDouble(value);
+            if (dvalue != null) {
+                btotal = btotal.add(BigDecimal.valueOf(dvalue));
+                continue;
+            }
+        }
+        if (itotal != 0) {
+            sb.append(" itotal = " + itotal);
+        }
+        if (btotal.doubleValue() != 0D) {
+            sb.append(" btotal = " + btotal);
+        }
+
+        btotal = btotal.add(BigDecimal.valueOf(itotal));
+        sb.append(" SIGMA = " + btotal.setScale(precision, RoundingMode.HALF_UP));
         return sb.toString().trim();
     }
 

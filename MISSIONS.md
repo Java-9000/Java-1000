@@ -108,3 +108,38 @@ here is merely to demonstrate the basics.
 
 > Go to [Mission](./com/soft9000/M1000/A00700/MISSION.md)
 
+## Mission: The Scanner Class
+If you have been craving more complex activities, then 
+you are in luck!
+
+In this activity we will employ Java's `Scanner` class 
+to allow us to document & test those floating-point oddities. 
+We will also need to manage some exceptions.
+
+(1) Create public, static functions to convert strings into 
+any possible `Integer`, `Float`, `Double`, or `BigDecimal` instances. 
+Return `null` on error.
+
+(2) Test the above conversions using JUnit. 
+* Place your scanner's input into a `File` (optional.)
+
+(3) Create & test a public, static function called `addNum`.
+* Input: A `Scanner`.
+* Processing: Aggregate individual `int`, `float`, and `double` totals.
+* Processing: Ignore any other input.
+* Output: Show each individual aggregation.
+* Output: Show the combined values as "SIGMA".
+
+(4) Repeat the above processing to create `addBigNum`.
+* Input: A `Scanner` and `int precision`
+* Processing: As per above, using only `Integer` and `BigDecimal`.
+* Output: As above, yet with "SIGMA" rounded to the requested
+input `precision`.
+
+(5) Finally, create a public, static `main` to scan the
+standard input for any values. 
+* Note that `System.in` will 
+require a `CTRL+d` / `CTRL+z` (aka "EOF") to stop the scanning process!
+
+> Go to [Mission](./com/soft9000/M1000/A00800/MISSION.md)
+
