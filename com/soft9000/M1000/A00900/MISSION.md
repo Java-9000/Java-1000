@@ -8,7 +8,7 @@ demonstrate how to use what we have learned to create
 a 'Reverse Polish Notation' - or R.P.N - calculator.
 
 Your mission is to create a "White Box" test:
-  * Run CaclRPN.Java
+  * Run CalcRPN.Java
   * Review the code
   * Create test cases 
 
