@@ -24,6 +24,11 @@ to manage the evaluation stack.
 ## Challenge Activity:
 - Study our implementation.
 - Create & test your own version!
+- Add support for:
+   * Additional operations.
+   * The "passing in" of expressions from the command line.
+- Use JUnit to test command-line operations.
+- Use a `Scanner` to support file-based testing?
 
 ### Files:
 * `CalcRPN.java`
