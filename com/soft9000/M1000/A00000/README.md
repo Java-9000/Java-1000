@@ -3,7 +3,7 @@
 You can [click here](../../../../MISSIONS.md) to see the mission index.
 
 ### We suggest that you: 
-(1) Read `MISSION.md`
+(1) Read [`MISSION.md`](MISSION.md)
 - Follow the instructions
 - Run the test file(s)
 
