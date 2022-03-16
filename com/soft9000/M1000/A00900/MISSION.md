@@ -23,9 +23,8 @@ to manage the evaluation stack.
 - Create & test your own version!
 
 ### Files:
-* `WordProblem.java`
-* `WordProblemTest.java`
-* `WpTest001.txt`
+* `CalcRPN.java`
+* `TryParsers.java`
 
 ### Notes:
 - Using Scanner's `.nextLine()` allows us to read an entire line.
