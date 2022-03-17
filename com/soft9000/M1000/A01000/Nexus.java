@@ -4,7 +4,7 @@ package com.soft9000.M1000.A01000;
 // considered an extremely bad idea... To understand why,
 // just 'Google `Y2K`?
 //
-// Once our Nexus stops gowing, then importation is a much
+// Once our Nexus stops growing, then importation is a much
 // better way to share any fully-tested code between projects.
 //
 
@@ -42,18 +42,23 @@ public class Nexus {
     }
 
     public static BigDecimal Parse(String line, int precision) {
+        if (line == null) return null; // GIGO
         BigDecimal btotal = Parse(line);
         return btotal.setScale(precision, RoundingMode.HALF_UP);
     }
 
     public static BigDecimal Parse(String line) {
+        if (line == null) return null; // GIGO
         ArrayList<String> stack = new ArrayList<>();
         BigDecimal btotal = null; // Tell others that we're 1st timein' ...
 
         String[] values = line.split(" ");
         for (String value : values) {
-            if (value == null || value.length() == 0)
+            if (value == null || value.length() == 0) {
+                if (btotal == null)
+                    btotal = BigDecimal.valueOf(0D);
                 continue;
+            }
             char cval = value.charAt(0);
             switch (cval) {
                 case '+': {
@@ -87,27 +92,30 @@ public class Nexus {
         return btotal;
     }
 
-    public static BigDecimal tryBigD(String... values) {
-        for (String value : values) {
-            if (value == null) continue;
-            try {
-                var effort = Integer.parseInt(value);
-                return BigDecimal.valueOf(effort);
-            } catch (NumberFormatException e) {
+    /**
+     * Attempt to parse any SINGLE value.
+     *
+     * @param value Any parsable value.
+     * @return A BigDecimal, else null.
+     */
+     static BigDecimal tryBigD(String value) {
+        if (value == null) return null; // GIGO
+        try {
+            var effort = Integer.parseInt(value);
+            return BigDecimal.valueOf(effort);
+        } catch (NumberFormatException e) {
 
-            }
-            try {
-                var effort = Float.parseFloat(value);
-                return BigDecimal.valueOf(effort);
-            } catch (NumberFormatException e) {
+        }
+        try {
+            var effort = Float.parseFloat(value);
+            return BigDecimal.valueOf(effort);
+        } catch (NumberFormatException e) {
 
-            }
-            try {
-                var effort = Double.parseDouble(value);
-                return BigDecimal.valueOf(effort);
-            } catch (NumberFormatException e) {
-
-            }
+        }
+        try {
+            var effort = Double.parseDouble(value);
+            return BigDecimal.valueOf(effort);
+        } catch (NumberFormatException e) {
 
         }
         return null;
