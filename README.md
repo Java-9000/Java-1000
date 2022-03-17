@@ -30,14 +30,11 @@ Hence, in this educational opportunity:
 
 (2) `Clone` this training from that fork onto your local computer.
 
-(3) `Commit` any changes to your local resposiory.
+(3) `Commit` any changes to your local repository.
 
 (4) `Push` your solutions back to that previously forked copy here on GitHub.
 
-### Javaeers:
-Please note that you can help me help you 
-by [buying our training](https://www.udemy.com/course/how-to-java).
-
+### Java Educational Groups:
 If you crave everything java - _and / or have your **own** 
 'stuff to share_ - then join us at the 
 Javaeers Groups for [Java Training Videos](https://www.facebook.com/JavaVideos9000/)
