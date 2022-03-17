@@ -11,7 +11,17 @@ project. -Scripting languages are great for that type of thing. 8^)
 So **feel free to [click here](./MISSIONS.md) to see that 'genned mission
 index**, or run [the script](./missions.py) on your 'local if that page is slightly out-of-date...
 
-### We suggest that you: 
+### Project Notes
+* Testing is the presently most critical problem in our industry. Hence, in this educational opportunity:
+  * The code is important.
+  * The testing techniques are important, as well!
+* This code is free & open to all: 
+  * `Fork`ing helps you keep up with all changes.
+  * When I die, you'll always have your `fork`ed copy.
+  * Even `clone`ers give credit, where credit is due?
+* Finally, modern software developers need to know how to use GitHub...
+
+### We suggest that Students: 
 
 (1) `Fork` this training.
 
