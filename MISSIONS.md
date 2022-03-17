@@ -1,5 +1,4 @@
-STATUS: Renaming __A00900.TryParsers.java__ broke GitHub ... Deleting same did not solve the problem ... Yikes!
-
+ 
 > This file was created by [this](./missions.py) Python script.
 Learn what Python scripts [can do](https://www.udemy.com/course/python-1000/?referralCode=D3A7B607149F46D12A28) for you!
  
@@ -145,17 +144,24 @@ require a `CTRL+d` / `CTRL+z` (aka "EOF") to stop the scanning process!
 > Go to [Mission](./com/soft9000/M1000/A00800/MISSION.md)
 
 ## Mission: RPN Calculator
-Now is a good time to
-demonstrate how to use what we have learned to create
+Renaming `TryParsers`.java broke GitHub. 
+Please use [this project](https://github.com/Java-9000/Java-1000/tree/main/com/soft9000/M1000/A00901) until further notice?
+
+> Go to [Mission](./com/soft9000/M1000/A00900/MISSION.md)
+
+## Mission: RPN Calculator
+Now is a good time to demonstrate how to use what we have learned to create
 a 'Reverse Polish Notation' - or R.P.N - calculator.
 
 Your mission is to create a "White Box" test:
-  * Run CaclRPN.Java
+  * Run CalcRPN.Java
   * Review the code
   * Create test cases 
 
 __NOTE__: If the term "White Box Testing" is new to you, then you 
 might also enjoy [Testing Success](https://www.udemy.com/course/testing-success/?referralCode=23D2EC0CEB0FFB5C65C8)?
 
-> Go to [Mission](./com/soft9000/M1000/A00900/MISSION.md)
+p.s. This A00901 project replaces A00900 for the moment... Server issues...
+
+> Go to [Mission](./com/soft9000/M1000/A00901/MISSION.md)
 
