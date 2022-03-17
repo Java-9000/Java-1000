@@ -33,7 +33,7 @@ to manage the evaluation stack.
 
 ### Files:
 * `CalcRPN.java`
-* `TryParsers.java`
+* `Nexus.java`
 
 ### Notes:
 - Using Scanner's `.nextLine()` allows us to read an entire line.
