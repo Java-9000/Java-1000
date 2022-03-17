@@ -89,6 +89,7 @@ public class Nexus {
 
     public static BigDecimal tryBigD(String... values) {
         for (String value : values) {
+            if(value == null) continue;
             try {
                 var effort = Integer.parseInt(value);
                 return BigDecimal.valueOf(effort);
@@ -113,6 +114,7 @@ public class Nexus {
     }
 
     public static BigDecimal add(ArrayList<String> stack, BigDecimal btotal) {
+        if(stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -131,6 +133,7 @@ public class Nexus {
     }
 
     public static BigDecimal subtract(ArrayList<String> stack, BigDecimal btotal) {
+        if(stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -149,6 +152,7 @@ public class Nexus {
     }
 
     public static BigDecimal multiply(ArrayList<String> stack, BigDecimal btotal) {
+        if(stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -167,7 +171,7 @@ public class Nexus {
     }
 
     public static BigDecimal divide(ArrayList<String> stack, BigDecimal btotal) {
-
+        if(stack == null) return BigDecimal.valueOf(0);
             for (String line : stack) {
                 BigDecimal effort = tryBigD(line);
                 if (effort != null) {
