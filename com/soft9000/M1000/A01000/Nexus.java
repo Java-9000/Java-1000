@@ -20,7 +20,14 @@ import java.util.Scanner;
  */
 public class Nexus {
 
-    protected static Scanner getScanner(String... params) {
+    /**
+     * Convert a collection of strings into a Scanner. Use System.in
+     * if none. Null input-strings will be ignored.
+     *
+     * @param params A collection of String.
+     * @return A scanner from same, else the standard input.
+     */
+    public static Scanner getScanner(String... params) {
         if (params != null) {
             StringBuilder sb = new StringBuilder();
             for (String param : params) {
@@ -40,8 +47,8 @@ public class Nexus {
     }
 
     public static BigDecimal Parse(String line) {
-        ArrayList<String> stack = new ArrayList<>(); // NEW!
-        BigDecimal btotal = null; // NEW! Tell others that we're 1st timein' ...
+        ArrayList<String> stack = new ArrayList<>();
+        BigDecimal btotal = null; // Tell others that we're 1st timein' ...
 
         String[] values = line.split(" ");
         for (String value : values) {
@@ -50,30 +57,30 @@ public class Nexus {
             char cval = value.charAt(0);
             switch (cval) {
                 case '+': {
-                    btotal = com.soft9000.M1000.A00900.Nexus.add(stack, btotal);
+                    btotal = Nexus.add(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '-': {
-                    btotal = com.soft9000.M1000.A00900.Nexus.subtract(stack, btotal);
+                    btotal = Nexus.subtract(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '*': {
-                    btotal = com.soft9000.M1000.A00900.Nexus.multiply(stack, btotal);
+                    btotal = Nexus.multiply(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '/': {
-                    btotal = com.soft9000.M1000.A00900.Nexus.divide(stack, btotal);
+                    btotal = Nexus.divide(stack, btotal);
                     stack.clear();
                 }
                 break;
                 default: {
-                    if (com.soft9000.M1000.A00900.Nexus.tryBigD(value) != null)
+                    if (Nexus.tryBigD(value) != null)
                         stack.add(value);
                     else
-                        System.err.printf("Error: '%s' ?\n", value); // NEW!
+                        System.err.printf("Error: '%s' ?\n", value);
                 }
             }
         }
@@ -83,19 +90,19 @@ public class Nexus {
     public static BigDecimal tryBigD(String... values) {
         for (String value : values) {
             try {
-                Integer effort = Integer.parseInt(value);
+                var effort = Integer.parseInt(value);
                 return BigDecimal.valueOf(effort);
             } catch (NumberFormatException e) {
 
             }
             try {
-                Float effort = Float.parseFloat(value);
+                var effort = Float.parseFloat(value);
                 return BigDecimal.valueOf(effort);
             } catch (NumberFormatException e) {
 
             }
             try {
-                Double effort = Double.parseDouble(value);
+                var effort = Double.parseDouble(value);
                 return BigDecimal.valueOf(effort);
             } catch (NumberFormatException e) {
 
@@ -116,7 +123,7 @@ public class Nexus {
                 try {
                     btotal = btotal.add(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0); // NEW! (error)
+                    return BigDecimal.valueOf(0);
                 }
             }
         }
@@ -134,7 +141,7 @@ public class Nexus {
                 try {
                     btotal = btotal.subtract(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0); // NEW! (error)
+                    return BigDecimal.valueOf(0);
                 }
             }
         }
@@ -152,7 +159,7 @@ public class Nexus {
                 try {
                     btotal = btotal.multiply(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0); // NEW! (error)
+                    return BigDecimal.valueOf(0);
                 }
             }
         }
@@ -171,7 +178,7 @@ public class Nexus {
                     try {
                         btotal = btotal.divide(effort);
                     } catch(Exception ex) {
-                        return BigDecimal.valueOf(0); // NEW! (error)
+                        return BigDecimal.valueOf(0);
                     }
                 }
             }

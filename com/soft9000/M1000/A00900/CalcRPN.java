@@ -1,5 +1,7 @@
 package com.soft9000.M1000.A00900;
 
+import com.soft9000.M1000.A00901.Nexus;
+
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
@@ -24,27 +26,27 @@ public class CalcRPN {
             char cval = value.charAt(0);
             switch (cval) {
                 case '+': {
-                    btotal = TryParsers.add(stack, btotal);
+                    btotal = Nexus.add(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '-': {
-                    btotal = TryParsers.subtract(stack, btotal);
+                    btotal = Nexus.subtract(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '*': {
-                    btotal = TryParsers.multiply(stack, btotal);
+                    btotal = Nexus.multiply(stack, btotal);
                     stack.clear();
                 }
                 break;
                 case '/': {
-                    btotal = TryParsers.divide(stack, btotal);
+                    btotal = Nexus.divide(stack, btotal);
                     stack.clear();
                 }
                 break;
                 default: {
-                    if (TryParsers.tryBigD(value) != null)
+                    if (Nexus.tryBigD(value) != null)
                         stack.add(value);
                     else
                         System.err.printf("Error: '%s' ?\n", value); // NEW!
