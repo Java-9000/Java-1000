@@ -165,3 +165,8 @@ p.s. This A00901 project replaces A00900 for the moment... Server issues...
 
 > Go to [Mission](./com/soft9000/M1000/A00901/MISSION.md)
 
+## Mission: Getting Classy - Part One
+A work in process ... stay tuned!
+
+> Go to [Mission](./com/soft9000/M1000/A01000/MISSION.md)
+

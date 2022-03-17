@@ -52,7 +52,7 @@ public class Nexus {
 
         String[] values = line.split(" ");
         for (String value : values) {
-            if(value == null || value.length() == 0)
+            if (value == null || value.length() == 0)
                 continue;
             char cval = value.charAt(0);
             switch (cval) {
@@ -89,7 +89,7 @@ public class Nexus {
 
     public static BigDecimal tryBigD(String... values) {
         for (String value : values) {
-            if(value == null) continue;
+            if (value == null) continue;
             try {
                 var effort = Integer.parseInt(value);
                 return BigDecimal.valueOf(effort);
@@ -114,7 +114,7 @@ public class Nexus {
     }
 
     public static BigDecimal add(ArrayList<String> stack, BigDecimal btotal) {
-        if(stack == null) return BigDecimal.valueOf(0);
+        if (stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -133,7 +133,7 @@ public class Nexus {
     }
 
     public static BigDecimal subtract(ArrayList<String> stack, BigDecimal btotal) {
-        if(stack == null) return BigDecimal.valueOf(0);
+        if (stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -152,7 +152,7 @@ public class Nexus {
     }
 
     public static BigDecimal multiply(ArrayList<String> stack, BigDecimal btotal) {
-        if(stack == null) return BigDecimal.valueOf(0);
+        if (stack == null) return BigDecimal.valueOf(0);
         for (String line : stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
@@ -171,21 +171,21 @@ public class Nexus {
     }
 
     public static BigDecimal divide(ArrayList<String> stack, BigDecimal btotal) {
-        if(stack == null) return BigDecimal.valueOf(0);
-            for (String line : stack) {
-                BigDecimal effort = tryBigD(line);
-                if (effort != null) {
-                    if (btotal == null) {
-                        btotal = effort;
-                        continue;
-                    }
-                    try {
-                        btotal = btotal.divide(effort);
-                    } catch(Exception ex) {
-                        return BigDecimal.valueOf(0);
-                    }
+        if (stack == null) return BigDecimal.valueOf(0);
+        for (String line : stack) {
+            BigDecimal effort = tryBigD(line);
+            if (effort != null) {
+                if (btotal == null) {
+                    btotal = effort;
+                    continue;
+                }
+                try {
+                    btotal = btotal.divide(effort);
+                } catch (Exception ex) {
+                    return BigDecimal.valueOf(0);
                 }
             }
+        }
         return btotal;
     }
 }
