@@ -14,8 +14,6 @@ Your mission is to create a "White Box" test:
 __NOTE__: If the term "White Box Testing" is new to you, then you 
 might also enjoy [Testing Success](https://www.udemy.com/course/testing-success/?referralCode=23D2EC0CEB0FFB5C65C8)?
 
-p.s. This A00901 project replaces A00900 for the moment... Server issues...
-
 ## Bonus:
 * Review each `NEW!` comment.
 * Note how we used 
@@ -40,7 +38,7 @@ to manage the evaluation stack.
 - Entering "EOF" on any line works on Windows, as well as elsewhere.
 - Using `ArrayList` allowed us to create a list of strings from
 a command-line.
-- The `TryParsers` class is highly re-usable.
+- The `Nexus` class is highly re-usable... so be SURE to test it?  8^)
 - `System.out.printf(...)` is worthy of a [Google](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)?
 
 ### p.s.
