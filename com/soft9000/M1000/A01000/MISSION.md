@@ -2,10 +2,38 @@
 
 > _VIDEO:_ (tbd)
 
-## Mission: Getting Classy - Part One
-
-A work in process ... stay tuned!
+## Mission: Getting Classy
+Creating class instances is a fine way to help us manage more than
+any single, static, set of information. Reviewing the `CalcJob` class
+therefore, notice that hiding those "nasty nulls" is just one of the 
+many benefits?
 
 ## Bonus:
+- [Here is](./old) a minimalist solution to the previous mission.
 
-* In progress
+## Challenge Activity:
+- Study our implementation.
+  * Compare the [new `Nexus`](./Nexus.java) to the [old `Nexus`](./old/Nexus.java).
+  * Did the new [`CalcJob` Class](./CalcJob.java) add any clarity to the `Nexus`?
+  * Might we ever want to have more that a single `CalcJob` in play?
+- Create & test your own version!
+
+### Files:
+* `ClassyCalc.java`
+* `CalcJob.java`
+* `CalcJobTest.java`
+* `Nexus.java`
+* `NexusTest.java`
+* `old/Nexus.java`
+* `old/NexusTest.java`
+
+### Notes:
+- Notice how `CalcJob` made many `Nexus` operations easier to understand?
+
+### p.s.
+* You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
+* You can also join our [Javaeers Group](https://www.facebook.com/JavaVideos9000/)!
+* If you are looking for advanced lessons, consider joining the [Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490) Group.
+
+You can [click here](../../../../MISSIONS.md) to see the mission index.
+

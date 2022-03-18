@@ -1,23 +1,15 @@
 package com.soft9000.M1000.A01000.old;
 
-// Note: Copying source code from project-to-project is
-// considered an extremely bad idea... To understand why,
-// just 'Google `Y2K`?
-//
-// Once our Nexus stops growing, then importation is a much
-// better way to share any fully-tested code between projects.
-//
+/**
+ * Here are some extra features + bug-fixes that our White Box
+ * testing suggested as one solution to that last lesson!
+ */
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-/**
- * Mission: Collect our re-use into one place. The idea is to
- * minimize student overloading 8^) whilst we reach a
- * critical-mass on any testable sub-theme.
- */
 public class Nexus {
 
     /**
@@ -28,7 +20,7 @@ public class Nexus {
      * @return A scanner from same, else the standard input.
      */
     public static Scanner getScanner(String... params) {
-        if (params != null) {
+        if (params != null && params.length != 0) { // NEW!
             StringBuilder sb = new StringBuilder();
             for (String param : params) {
                 if (param == null)
