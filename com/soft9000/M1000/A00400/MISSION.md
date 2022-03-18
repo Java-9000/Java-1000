@@ -32,9 +32,18 @@
 - Some feel that `private` member functions need never sanity-checked their parameters. Others do not. (There are valid arguments on both sides!)
 - Parameter testing is an important way to know what our input is, as well as to prevent data processing errors!
 
-### p.s.
-* You can help me help you by purchasing [My Training](https://www.udemy.com/course/how-to-java).
-* You can also join our [Javaeers Group](https://www.facebook.com/JavaVideos9000/)!
-* If you are looking for advanced lessons, consider joining the [Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490) Group.
+### Java Educational Groups:
+If you crave everything java - _and / or have your **own**
+'stuff to share_ - then join us at the
+Javaeers Groups for [Java Training Videos](https://www.facebook.com/JavaVideos9000/)
+and [Java Training, General](https://www.facebook.com/groups/javatraining9000/).
+
+Finally, if you are looking for advanced lessons, consider joining the
+[Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490)
+Group.
+
+### Support our efforts:
+Like you, I too indeed have bills to pay as well... So you can help me help you
+by [buying our training](https://www.udemy.com/course/how-to-java)?
 
 You can [click here](../../../../MISSIONS.md) to see the mission index.

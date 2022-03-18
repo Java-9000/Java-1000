@@ -17,7 +17,7 @@ You can [click here](../../../../MISSIONS.md) to see the mission index.
 
 Please note that you can help me help you by [buying our training](https://www.udemy.com/course/how-to-java).
 
-If you crave everything java - _and / or have your **own** 'stuff to share_, then join us at
+If you crave everything java - _and / or have your **own** 'stuff to share_ - then join us at
 the [Javaeers Group](https://www.facebook.com/JavaVideos9000/).
 
 Finally, if you are looking for advanced lessons, consider joining
