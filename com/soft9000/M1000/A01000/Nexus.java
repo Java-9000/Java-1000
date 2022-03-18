@@ -10,7 +10,6 @@ package com.soft9000.M1000.A01000;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -41,55 +40,56 @@ public class Nexus {
         return new Scanner(System.in);
     }
 
-    public static BigDecimal Parse(String line, int precision) {
-        if (line == null) return null; // GIGO
-        BigDecimal btotal = Parse(line);
-        return btotal.setScale(precision, RoundingMode.HALF_UP);
+    public static boolean Parse(String line, int precision, CalcJob job) {
+        if (line == null) return false;
+        if (Parse(line, job)) {
+            job._btotal = job._btotal.setScale(precision, RoundingMode.HALF_UP);
+            return true;
+        }
+        return false;
     }
 
-    public static BigDecimal Parse(String line) {
-        if (line == null) return null; // GIGO
-        ArrayList<String> stack = new ArrayList<>();
-        BigDecimal btotal = null; // Tell others that we're 1st timein' ...
-
+    public static boolean Parse(String line, CalcJob job) {
+        boolean result = false;
+        if (line == null) return false;
         String[] values = line.split(" ");
         for (String value : values) {
             if (value == null || value.length() == 0) {
-                if (btotal == null)
-                    btotal = BigDecimal.valueOf(0D);
+                if (job._btotal == null)
+                    job._btotal = BigDecimal.valueOf(0D);
                 continue;
             }
             char cval = value.charAt(0);
             switch (cval) {
                 case '+': {
-                    btotal = Nexus.add(stack, btotal);
-                    stack.clear();
+                    result = Nexus.add(job);
+                    job._stack.clear();
                 }
                 break;
                 case '-': {
-                    btotal = Nexus.subtract(stack, btotal);
-                    stack.clear();
+                    result = Nexus.subtract(job);
+                    job._stack.clear();
                 }
                 break;
                 case '*': {
-                    btotal = Nexus.multiply(stack, btotal);
-                    stack.clear();
+                    result = Nexus.multiply(job);
+                    job._stack.clear();
                 }
                 break;
                 case '/': {
-                    btotal = Nexus.divide(stack, btotal);
-                    stack.clear();
+                    result = Nexus.divide(job);
+                    job._stack.clear();
                 }
                 break;
                 default: {
                     if (Nexus.tryBigD(value) != null)
-                        stack.add(value);
+                        result = job._stack.add(value);
                     else
                         System.err.printf("Error: '%s' ?\n", value);
                 }
             }
         }
-        return btotal;
+        return result;
     }
 
     /**
@@ -98,7 +98,7 @@ public class Nexus {
      * @param value Any parsable value.
      * @return A BigDecimal, else null.
      */
-     static BigDecimal tryBigD(String value) {
+    static BigDecimal tryBigD(String value) {
         if (value == null) return null; // GIGO
         try {
             var effort = Integer.parseInt(value);
@@ -121,79 +121,79 @@ public class Nexus {
         return null;
     }
 
-    public static BigDecimal add(ArrayList<String> stack, BigDecimal btotal) {
-        if (stack == null) return BigDecimal.valueOf(0);
-        for (String line : stack) {
+    public static boolean add(CalcJob job) {
+        if (job == null) return false;
+        for (String line : job._stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
-                if (btotal == null) {
-                    btotal = effort;
+                if (job._btotal == null) {
+                    job._btotal = effort;
                     continue;
                 }
                 try {
-                    btotal = btotal.add(effort);
+                    job._btotal = job._btotal.add(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0);
+                    return false;
                 }
             }
         }
-        return btotal;
+        return true;
     }
 
-    public static BigDecimal subtract(ArrayList<String> stack, BigDecimal btotal) {
-        if (stack == null) return BigDecimal.valueOf(0);
-        for (String line : stack) {
+    public static boolean subtract(CalcJob job) {
+        if (job == null) return false;
+        for (String line : job._stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
-                if (btotal == null) {
-                    btotal = effort;
+                if (job._btotal == null) {
+                    job._btotal = effort;
                     continue;
                 }
                 try {
-                    btotal = btotal.subtract(effort);
+                    job._btotal = job._btotal.subtract(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0);
+                    return false;
                 }
             }
         }
-        return btotal;
+        return true;
     }
 
-    public static BigDecimal multiply(ArrayList<String> stack, BigDecimal btotal) {
-        if (stack == null) return BigDecimal.valueOf(0);
-        for (String line : stack) {
+    public static boolean multiply(CalcJob job) {
+        if (job == null) return false;
+        for (String line : job._stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
-                if (btotal == null) {
-                    btotal = effort;
+                if (job._btotal == null) {
+                    job._btotal = effort;
                     continue;
                 }
                 try {
-                    btotal = btotal.multiply(effort);
+                    job._btotal = job._btotal.multiply(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0);
+                    return false;
                 }
             }
         }
-        return btotal;
+        return true;
     }
 
-    public static BigDecimal divide(ArrayList<String> stack, BigDecimal btotal) {
-        if (stack == null) return BigDecimal.valueOf(0);
-        for (String line : stack) {
+    public static boolean divide(CalcJob job) {
+        if (job == null) return false;
+        for (String line : job._stack) {
             BigDecimal effort = tryBigD(line);
             if (effort != null) {
-                if (btotal == null) {
-                    btotal = effort;
+                if (job._btotal == null) {
+                    job._btotal = effort;
                     continue;
                 }
                 try {
-                    btotal = btotal.divide(effort);
+                    job._btotal = job._btotal.divide(effort);
                 } catch (Exception ex) {
-                    return BigDecimal.valueOf(0);
+                    return false;
                 }
             }
         }
-        return btotal;
+        return true;
     }
 }

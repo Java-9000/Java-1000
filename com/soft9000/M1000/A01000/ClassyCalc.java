@@ -1,6 +1,5 @@
 package com.soft9000.M1000.A01000;
 
-import java.math.BigDecimal;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -11,12 +10,17 @@ public class ClassyCalc {
         System.out.println("Example:\n1 2 3 4 5 [+,-,*,/]");
         System.out.println("Enter EOF when done:");
         Scanner scn = Nexus.getScanner(args); // NEW!
+        CalcJob job = new CalcJob();
         while (scn.hasNext()) {
             String line = scn.nextLine();
             if (line.toLowerCase(Locale.ROOT).equals("eof"))
                 break;
-            BigDecimal result = Nexus.Parse(line);
-            System.out.println("= " + result);
+            if (Nexus.Parse(line, job)) {
+                System.out.println("= " + job._btotal);
+            } else {
+                System.err.println("Error: Try again?");
+            }
+            job.reset();
         }
         System.out.println("Done.");
     }
