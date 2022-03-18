@@ -155,12 +155,13 @@ Your mission is to create a "White Box" test:
 __NOTE__: If the term "White Box Testing" is new to you, then you 
 might also enjoy [Testing Success](https://www.udemy.com/course/testing-success/?referralCode=23D2EC0CEB0FFB5C65C8)?
 
-p.s. This A00901 project replaces A00900 for the moment... Server issues...
-
 > Go to [Mission](./com/soft9000/M1000/A00900/MISSION.md)
 
-## Mission: Getting Classy - Part One
-A work in process ... stay tuned!
+## Mission: Getting Classy
+Creating class instances is a fine way to help us manage more than
+any single, static, set of information. Reviewing the `CalcJob` class
+therefore, notice that hiding those "nasty nulls" is just one of the 
+many benefits?
 
 > Go to [Mission](./com/soft9000/M1000/A01000/MISSION.md)
 
