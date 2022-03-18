@@ -4,9 +4,12 @@
 
 ## Mission: Getting Classy
 Creating class instances is a fine way to help us manage more than
-any single, static, set of information. Reviewing the `CalcJob` class
-therefore, notice that hiding those "nasty nulls" is just one of the 
+any single, static, set of information. Reviewing the new `CalcJob` class
+therefore, notice that managing those "nasty nulls" is just one of the 
 many benefits?
+
+Users might also want their calculators to be working on several 
+calculation jobs at once...
 
 ## Bonus:
 - [Here is](./old) a minimalist solution to the previous mission.
@@ -16,7 +19,11 @@ many benefits?
   * Compare the [new `Nexus`](./Nexus.java) to the [old `Nexus`](./old/Nexus.java).
   * Did the new [`CalcJob` Class](./CalcJob.java) add any clarity to the `Nexus`?
   * Might we ever want to have more that a single `CalcJob` in play?
-- Create & test your own version!
+
+
+- Create & test your own version:
+  * What notation might we add to switch between CalcJobs?
+  * How might we add support for multiple CalcJobs?
 
 ### Files:
 * `ClassyCalc.java`
