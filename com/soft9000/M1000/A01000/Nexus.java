@@ -41,7 +41,7 @@ public class Nexus {
     }
 
     public static boolean Parse(String line, int precision, CalcJob job) {
-        if (line == null) return false;
+        if (line == null || job == null) return false;
         if (Parse(line, job)) {
             job._btotal = job._btotal.setScale(precision, RoundingMode.HALF_UP);
             return true;
@@ -51,7 +51,7 @@ public class Nexus {
 
     public static boolean Parse(String line, CalcJob job) {
         boolean result = false;
-        if (line == null) return false;
+        if (line == null || job == null) return false;
         String[] values = line.split(" ");
         for (String value : values) {
             if (value == null || value.length() == 0) {
@@ -84,11 +84,14 @@ public class Nexus {
                 default: {
                     if (Nexus.tryBigD(value) != null)
                         result = job._stack.add(value);
-                    else
+                    else {
                         System.err.printf("Error: '%s' ?\n", value);
-                }
-            }
-        }
+                        result = false;
+                    }
+                } // default
+            } // switch
+            if (!result) break; // NEW!
+        } // for
         return result;
     }
 
