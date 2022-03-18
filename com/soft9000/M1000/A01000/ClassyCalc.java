@@ -16,9 +16,9 @@ public class ClassyCalc {
             if (line.toLowerCase(Locale.ROOT).equals("eof"))
                 break;
             if (Nexus.Parse(line, job)) {
-                System.out.println("= " + job._btotal);
+                System.out.println("= " + job.getTotal());
             } else {
-                System.err.println("Error: Try again?");
+                System.err.println("Try again ... ");
             }
             job.reset();
         }

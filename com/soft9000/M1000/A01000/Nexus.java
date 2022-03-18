@@ -27,7 +27,7 @@ public class Nexus {
      * @return A scanner from same, else the standard input.
      */
     public static Scanner getScanner(String... params) {
-        if (params != null) {
+        if (params != null && params.length != 0) { // NEW!
             StringBuilder sb = new StringBuilder();
             for (String param : params) {
                 if (param == null)
