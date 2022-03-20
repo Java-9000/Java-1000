@@ -19,7 +19,7 @@ import java.util.Scanner;
  * critical-mass on any testable sub-theme.
  */
 public class Nexus {
-    private static int boo = 0; // NEW! Inner-class can access.
+    private static int boo = 0; // NEW! Inner-class may access.
 
     /**
      * Convert a collection of strings into a Scanner. Use System.in

@@ -20,7 +20,7 @@ import java.util.Scanner;
  */
 public class Nexus {
 
-    private static int boo = 0; // NEW! STATIC nested class can ALSO access!
+    private static int boo = 0; // NEW! STATIC nested class may ALSO access!
 
     /**
      * Convert a collection of strings into a Scanner. Use System.in

@@ -32,7 +32,7 @@ things together.
 - Notice how `CalcJob` required an instance of `Nexus` 
 to be created, first?
 - Nested classes may be either `static` or not.
-- Notice how `CalcJob` may access that private, static `Nexus.boo`?
+- Notice how the nestes `CalcJob` may access that private, static `Nexus.boo`?
 
 ### Java Educational Groups:
 If you crave everything java - _and / or have your **own**
