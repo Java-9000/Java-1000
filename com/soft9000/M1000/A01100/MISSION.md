@@ -31,7 +31,7 @@ things together.
 ### Notes:
 - Notice how `CalcJob` required an instance of `Nexus` 
 to be created, first?
-- Nested class relationships may be either `static` or not.
+- Nested classes may be either `static` or not.
 
 ### Java Educational Groups:
 If you crave everything java - _and / or have your **own**
