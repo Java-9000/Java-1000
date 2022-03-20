@@ -180,3 +180,14 @@ things together.
 
 > Go to [Mission](./com/soft9000/M1000/A01100/MISSION.md)
 
+## Mission: Static Class Nestings
+Nesting one class within another need not be so uncommon!
+
+In this case, when our evolvng `Nexus` exclusively requires 
+the `CalcJob` instance, it is often a good time to nest 
+things together.
+
+> TODO: Work in progress!
+
+> Go to [Mission](./com/soft9000/M1000/A01200/MISSION.md)
+
