@@ -20,6 +20,8 @@ import java.util.Scanner;
  */
 public class Nexus {
 
+    private static int boo = 0; // NEW! STATIC nested class can ALSO access!
+
     /**
      * Convert a collection of strings into a Scanner. Use System.in
      * if none. Null input-strings will be ignored.
@@ -210,6 +212,7 @@ public class Nexus {
          * Set everything to the never-used state.
          */
         public void reset() {
+            Nexus.boo += 1;
             _btotal = null;
             _stack.clear();
         }

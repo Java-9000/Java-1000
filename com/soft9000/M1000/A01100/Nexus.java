@@ -19,6 +19,7 @@ import java.util.Scanner;
  * critical-mass on any testable sub-theme.
  */
 public class Nexus {
+    private static int boo = 0; // NEW! Inner-class can access.
 
     /**
      * Convert a collection of strings into a Scanner. Use System.in
@@ -214,6 +215,7 @@ public class Nexus {
          * Set everything to the never-used state.
          */
         public void reset() {
+            Nexus.boo++; // NEW!
             _btotal = null;
             _stack.clear();
         }
