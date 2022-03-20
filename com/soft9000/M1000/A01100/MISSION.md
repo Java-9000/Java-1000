@@ -29,10 +29,18 @@ things together.
 * `CalcJobTest.java`
 
 ### Notes:
+- Nested classes may be either `static` or not.
+
+
 - Notice how `CalcJob` required an instance of `Nexus` 
 to be created, first?
-- Nested classes may be either `static` or not.
-- Notice how the nestes `CalcJob` may access that private, static `Nexus.boo`?
+
+
+- Notice how the nested `CalcJob` may access that private, static `Nexus.boo`?
+  - Use a non-static, nested class when you've a need to be sure that an instance of
+your 'outer' class has been created and / or when the inner & outer class
+__instances__ are 'tightly coupled' together.
+  - See the next lesson when - as we have here - the opposite is the case.
 
 ### Java Educational Groups:
 If you crave everything java - _and / or have your **own**

@@ -12,7 +12,6 @@ things together.
 > TODO: Work in progress!
 
 ## Bonus:
-- Change the nested definition of `CalcJob` to `static`. Correct any errors.
 - (Work in progress)
 
 ## Challenge Activity:
@@ -26,15 +25,14 @@ things together.
 * `CalcNester.java`
 * `Nexus.java`
 * `NexusTest.java`
-* `CalcJobTest.java`
-* (more soon!)
-
 
 ### Notes:
-- Notice how `CalcJob` required an instance of `Nexus` 
-to be created, first?
 - Nested classes may be either `static` or not.
-- Notice how our `static` `CalcJob` may __also__ access that private, static `Nexus.boo`...
+- Notice how our `static` `CalcJob` may __also__ access that private, static `Nexus.boo`. 
+- Use a `static` inner-class whenever you've no need to be sure
+that an instance the 'outer' class has been created; that the 
+class __instances__ are 'loosely coupled,' and / or __dynamically__
+independent of each other. 
 
 ### Java Educational Groups:
 If you crave everything java - _and / or have your **own**
