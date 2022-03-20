@@ -30,9 +30,9 @@ things together.
 - Nested classes may be either `static` or not.
 - Notice how our `static` `CalcJob` may __also__ access that private, static `Nexus.boo`. 
 - Use a `static` inner-class whenever you've no need to be sure
-that an instance the 'outer' class has been created; that the 
-class __instances__ are 'loosely coupled,' and / or __dynamically__
-independent of each other. 
+that an instance of the 'outer' class has been created; that the 
+class __instances__ are 'loosely coupled,' and / or can operate __dynamically
+independent__ of each other. 
 
 ### Java Educational Groups:
 If you crave everything java - _and / or have your **own**
