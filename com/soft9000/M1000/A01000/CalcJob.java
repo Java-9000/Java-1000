@@ -51,7 +51,7 @@ public class CalcJob {
     /**
      * Add a value or operation to the stack.
      *
-     * @param aparam Add number or operator to the RPN stack.
+     * @param aparam A number or operator to add to the RPN stack.
      * @return False if aparam is invalid, else true.
      */
     public boolean addParam(String aparam) {
@@ -69,7 +69,7 @@ public class CalcJob {
     }
 
     /**
-     * Return the mutable stack.
+     * Return this job's mutable stack of valid operations.
      *
      * @return The present stack. Is never null.
      */

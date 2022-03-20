@@ -7,6 +7,7 @@ Learn what Python scripts [can do](https://www.udemy.com/course/python-1000/?ref
 * Show a string on your computer's screen.
 * Use comments in your code.
 * Use `javadoc` in your code.
+* Capture & verify your 'standard' output!
 
 > Go to [Mission](./com/soft9000/M1000/A00000/MISSION.md)
 
@@ -167,4 +168,15 @@ Users might also want their calculators to be working on several
 calculation jobs at once...
 
 > Go to [Mission](./com/soft9000/M1000/A01000/MISSION.md)
+
+## Mission: Nested Classes
+Nesting one class within another need not be so uncommon!
+
+In this case, when our evolvng `Nexus` exclusively requires 
+the `CalcJob` instance, it is often a good time to nest 
+things together.
+
+> TODO: Work in progress!
+
+> Go to [Mission](./com/soft9000/M1000/A01100/MISSION.md)
 
