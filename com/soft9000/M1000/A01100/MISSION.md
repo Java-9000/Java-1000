@@ -6,21 +6,26 @@
 Nesting one class within another need not be so uncommon!
 
 In this case, when our evolvng `Nexus` exclusively requires 
-the `CalcJob` instance, it is often a good time to nest 
-things together.
+the `CalcJob` instance, it is often a good time to __nest__ 
+classes together.
 
-> TODO: Work in progress!
+Your mission is to: 
+- Check the results of the __previous__ project into your GitGub fork.
+- __Cut__ & past the `CalcJob` code from our __previous__ exercise into the
+your  __previous__ `Nexus` class.
+- Update your __previous__ `main()` & test cases.
+
+Feel free to review our soloution in __this__ project if and as required.
 
 ## Bonus:
-- Change the nested definition of `CalcJob` to `static`. Correct any errors.
-- (Work in progress)
+- Update __this__ project's implementation
+- Add support for additional mathematical operations
+- Be sure to test any additions!
 
 ## Challenge Activity:
-- Study our implementation.
-  * (Work in progress)
-  
-- Create & test your own version:
-  * (Work in progress)
+- Study our implementation
+- Create & test your own version
+- Can you add & test support for `Array<CalcJob>`?
 
 ### Files:
 * `CalcNester.java`
