@@ -10,7 +10,7 @@ the `CalcJob` instance, it is often a good time to __nest__
 classes together.
 
 Your mission is to: 
-- Check the results of the __previous__ project into your GitGub fork.
+- Check the results of the __previous__ project into your GitHub fork.
 - __Cut__ & past the `CalcJob` code from our __previous__ exercise into the
 your  __previous__ `Nexus` class.
 - Update your __previous__ `main()` & test cases.
