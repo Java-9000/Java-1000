@@ -3,23 +3,32 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Static Class Nestings
-Nesting one class within another need not be so uncommon!
+In the last exercise, we saw that because our `Nexus` depended upon 
+the `CalcJob` instance, it was a good time to __nest__ classes together.
 
-In this case, when our evolvng `Nexus` exclusively requires 
-the `CalcJob` instance, it is often a good time to nest 
-things together.
+Notice how nesting one class within another can eliminate a lot of 'class clutter.' -But naming
+our classes properly can also do that! 
 
-> TODO: Work in progress!
+Unlike demonstrative naming techniques, switching between `static` and 'non-static' nesting
+definitions also allows us to better manage instanced associations.
+
+Your mission is to: 
+- Check the results of the __previous__ project into your GitGub fork.
+- Update your __previous__ `CalcJob` class.
+  -  Redefine your __previous__ `Nexus.CalcJob` class as `static`.
+   - Update & test your code.
+
+Feel free to review our soloution in [our Nexus](Nexus.java) project if and as required.
 
 ## Bonus:
-- (Work in progress)
+- Update __this__ project's implementation
+  - Add support for additional mathematical operations
+  - Be sure to test any additions!
 
 ## Challenge Activity:
-- Study our implementation.
-  * (Work in progress)
-  
-- Create & test your own version:
-  * (Work in progress)
+- Study our implementation
+  - Create & test your own version
+  - Can you add & test support for `Array<CalcJob>`?
 
 ### Files:
 * `CalcNester.java`
