@@ -3,17 +3,14 @@
 > _VIDEO:_ (tbd)
 
 ## Mission: Static Class Nestings
-In the last exercise, we saw that because our `Nexus` depended upon 
-the `CalcJob` instance, it was a good time to __nest__ classes together.
+In the last exercise we saw that because our `Nexus` depended upon 
+the `CalcJob` class, that it was a good time to __nest__ those two classes together. Notice how nesting one class within the other eliminated a lot of 'class file clutter' ... but naming our classes properly can also do that! 
 
-Notice how nesting one class within another can eliminate a lot of 'class clutter.' -But naming
-our classes properly can also do that! 
-
-Unlike demonstrative naming techniques, switching between `static` and 'non-static' nesting
-definitions also allows us to better manage instanced associations.
+So unlike demonstrative naming techniques, switching between `static` and 'non-static' nesting
+definitions allows us to also better manage instanced associations. While tighter couplings can be created, in this activity our `static CalcJob` class can be used without creating a `Nexus.` So a `static CalcJob` is a lot more instance-indepentant of the outer `Nexus` class!
 
 Your mission is to: 
-- Check the results of the __previous__ project into your GitGub fork.
+- Check the results of the __previous__ project into your GitHub fork.
 - Update your __previous__ `CalcJob` class.
   -  Redefine your __previous__ `Nexus.CalcJob` class as `static`.
    - Update & test your code.
