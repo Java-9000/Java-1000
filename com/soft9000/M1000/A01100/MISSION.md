@@ -15,7 +15,7 @@ Your mission is to:
 your  __previous__ `Nexus` class.
 - Update your __previous__ `main()` & test cases.
 
-Feel free to review our soloution in __this__ project if and as required.
+Feel free to review [our solution](Nexus.java#L209) in __this__ project if and as required.
 
 ## Bonus:
 - Update __this__ project's implementation
