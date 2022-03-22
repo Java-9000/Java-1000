@@ -11,7 +11,7 @@ classes together.
 
 Your mission is to: 
 - Check the results of the __previous__ project into your GitHub fork.
-- __Cut__ & past the `CalcJob` code from our __previous__ exercise into the
+- __Cut__ & past the `CalcJob` code from your __previous__ exercise into
 your  __previous__ `Nexus` class.
 - Update your __previous__ `main()` & test cases.
 

@@ -15,7 +15,7 @@ Your mission is to:
   -  Redefine your __previous__ `Nexus.CalcJob` class as `static`.
    - Update & test your code.
 
-Feel free to review our soloution in [our Nexus](Nexus.java) project if and as required.
+Feel free to review our solution in [our Nexus](Nexus.java#L206) project if and as required.
 
 ## Bonus:
 - Update __this__ project's implementation
