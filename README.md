@@ -47,3 +47,6 @@ Group.
 ### Support our efforts:
 Like you, I too indeed have bills to pay as well... So you can help me help you
 by [buying our training](https://www.udemy.com/course/how-to-java)?
+
+### Honorable Mention:
+If you've data, the you might like my [SQLMate](https://github.com/soft9000/SQLMate-for-Java) code generator project?
