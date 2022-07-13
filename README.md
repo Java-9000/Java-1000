@@ -40,9 +40,12 @@ If you crave everything java - _and / or have your **own**
 Javaeers Groups for [Java Training Videos](https://www.facebook.com/JavaVideos9000/)
 and [Java Training, General](https://www.facebook.com/groups/javatraining9000/).
 
-Finally, if you are looking for advanced lessons, consider joining the 
+If you are looking for advanced lessons, consider joining the 
 [Design, Frameworks & Threads](https://www.facebook.com/Java-Design-Frameworks-Thread-Video-Training-670850766419490) 
 Group.
+
+### Black Box Testing
+Finally, yet another great way to test Java is to use Robot Framework. [Here is](https://github.com/Python3-Training/Robot-Framework/tree/main/JavaExamples) how to use RF to build, test, as well as to document our efforts using any stand-alone CLI and JDK!
 
 ### Support our efforts:
 Like you, I too indeed have bills to pay as well... So you can help me help you
