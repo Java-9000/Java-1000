@@ -45,11 +45,11 @@ If you are looking for advanced lessons, consider joining the
 Group.
 
 ### Black Box Testing
-Finally, yet another great way to test Java is to use Robot Framework. [Here is](https://github.com/Python3-Training/Robot-Framework/tree/main/JavaExamples) how to use RF to build, test, as well as to document our efforts using any stand-alone CLI and JDK!
+Finally, yet another great way to test Java is to use Robot Framework. [Here is](https://github.com/Python3-Training/Robot-Framework/tree/main/JavaExamples) how to use RF to build, test, as well as to document our efforts using any stand-alone CLI / JDK!
 
 ### Support our efforts:
 Like you, I too indeed have bills to pay as well... So you can help me help you
 by [buying our training](https://www.udemy.com/course/how-to-java)?
 
 ### Honorable Mention:
-If you've data, the you might like my [SQLMate](https://github.com/soft9000/SQLMate-for-Java) code generator project?
+If you've data, then you might like my [SQLMate](https://github.com/soft9000/SQLMate-for-Java) code generator project?
